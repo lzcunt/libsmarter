@@ -163,7 +163,7 @@ struct meta_object final
 		_bx.initialize(std::forward<Args>(args)...);
 	}
 
-	virtual ~meta_object() = default;
+	~meta_object() = default;
 
 	T *get() {
 		return _bx.get();
